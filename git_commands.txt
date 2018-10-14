@@ -5,5 +5,38 @@ Gerði eftirfarandi skipanir í möppu verkefnisins:
     git add -A
     git push -u origin master
 
+Bauð öllum sem collaborators á github.
 
-    git commit -a -m "<skilaboð>"
+******************************************************************************************************************
+
+Ef einhver ætlar að vinna í þessu vinsamlegast láta vita á messenger svo það séu ekki aðrir að gera það sama.
+Framkvæma eftirfarandi í möppunni þar sem verkefnið er geymt:
+
+    (git pull keyrir git fetch og síðan git merge fyrir það branch sem við erum að vinna á)
+        git pull https://github.com/vefforritun/vef1-2018-h1.git
+
+1.  (git checkout -b <nafn-á-branch> býr til og skiptir yfir á branch)
+        git checkout -b sunnudagurErling
+    Þá er hægt að vinna í þessu í VSC eða hvar sem er.
+
+    Gott að gera reglulega:
+        git commit -a -m "Stutt skilaboð um hverju var breytt"
+    Þegar maður er búinn að kóða:
+        git push origin sunnudagurErling
+    Eftir það, áður en maður gerir merge, er hægt að gera bara:
+        git push
+
+    Á github getum við svo framkvæmt "Merge pull request" og "Delete Branch".
+    Þá hafa breytingar gerst á github en ekki locally.
+
+    Næst þegar maður ætlar að vinna í verkefninu, fara í rétta möppu, gera:
+        git branch -d sunnudagurErling      (eyðir)
+        git checkout master
+        git pull origin master
+    Og fara aftur í 1. hérna að ofan
+
+
+
+
+Í þessu myndbandi eru einhverjar upplýsingar um þetta og hvernig á að takast á við merge conflict
+https://www.youtube.com/watch?v=EuQ0sB0n6ZM&feature=youtu.be Fyrirlestur 5.3: Git #2

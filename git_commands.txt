@@ -30,9 +30,9 @@ Framkvæma eftirfarandi í möppunni þar sem verkefnið er geymt:
     Þá hafa breytingar gerst á github en ekki locally.
 
     Næst þegar maður ætlar að vinna í verkefninu, fara í rétta möppu, gera:
-        git branch -d sunnudagurErling      (eyðir)
         git checkout master
         git pull origin master
+        git branch -d sunnudagurErling      (eyðir)
     Og fara aftur í 1. hérna að ofan
 
 

@@ -1,0 +1,9 @@
+Stofnaði hópverkefnið á github
+Gerði eftirfarandi skipanir í möppu verkefnisins:
+    git init
+    git remote add origin git@github.com:eokristjans/hopv1-veff1.git
+    git add -A
+    git push -u origin master
+
+
+    git commit -a -m "<skilaboð>"

@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vefforritun/vef1-2018-h1.git"
+    "url": "git+https://github.com/eokristjans/hopv1-veff1.git"
   },
   "keywords": [],
   "author": "Alexander Þór, Andrea Ósk og Erling Óskar",
@@ -24,9 +24,9 @@
     "stylelint-config-primer": "^2.2.10"
   },
   "bugs": {
-    "url": "https://github.com/vefforritun/vef1-2018-h1/issues"
+    "url": "https://github.com/eokristjans/hopv1-veff1/issues"
   },
-  "homepage": "https://github.com/vefforritun/vef1-2018-h1#readme",
+  "homepage": "https://github.com/eokristjans/hopv1-veff1#readme",
   "dependencies": {
     "node-sass": "^4.9.3"
   }

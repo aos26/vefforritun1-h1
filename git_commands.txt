@@ -20,6 +20,7 @@ Framkvæma eftirfarandi í möppunni þar sem verkefnið er geymt:
     Þá er hægt að vinna í þessu í VSC eða hvar sem er.
 
     Gott að gera reglulega:
+        git add -A
         git commit -a -m "Stutt skilaboð um hverju var breytt"
     Þegar maður er búinn að kóða:
         git push origin sunnudagurErling

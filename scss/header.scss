@@ -1,0 +1,14 @@
+.header {
+  width: 100%;
+  background-color: $graenn;
+}
+
+.header__title {
+  size: 50px;
+  text-align: center;
+}
+
+.header__menu__list {
+  display: flex;
+  list-style-type: none;
+}

@@ -18,7 +18,8 @@ html { /* stylelint-disable-line */
   // TODO fleiri grunn stillingar
 }
 
-
-
 // TODO sækja allar sass skrár
-@import "scss/...";
+// @import "scss/...";
+@import "scss/header";
+@import "scss/footer";
+@import "scss/index";

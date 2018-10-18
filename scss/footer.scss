@@ -1,0 +1,48 @@
+@import "scss/config";
+
+.footer {
+  width: 100%;
+  background-color: $bleikur;
+}
+
+.footer__contents {
+  display: flex;
+  margin: $gutter;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.footer__col {
+  width: 50%;
+
+  @media (min-width: 1000px) {
+    width: 25%;
+  }
+}
+
+.footer__col__title {
+  margin: $gutter 0;
+}
+
+.footer__col__list {
+  list-style-type: none;
+}
+
+.footer__col__list * {
+  margin-bottom: 0.5*$gutter;
+}
+
+.footer__col__item {
+  color: $gulgrar;
+  text-decoration: none;
+  transition: 300ms ease-in-out;
+}
+
+.footer__col__item:hover {
+  color: $svartur;
+}
+
+.footer__trademark {
+  padding: $gutter;
+  text-align: center;
+}

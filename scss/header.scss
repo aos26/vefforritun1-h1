@@ -23,19 +23,38 @@
 }
 
 .header__title {
-  size: 50px;
+  margin: $gutter;
   font-family: $fyrirsogn;
+  font-size: 3em;
+  text-align: center;
 
 }
 
 .header__menu__list {
   display: flex;
+  text-transform: uppercase;
   list-style-type: none;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.hmi__link {
+.header__menu * {
+  margin-bottom: 0.5*$gutter;
+}
+
+.header__menu__item {
+  margin: $gutter;
   color: $svartur;
-  text-transform: uppercase;
+  text-decoration: none;
+  transition: 300ms ease-in-out;
+}
+
+.header__menu__item:hover {
+  color: $blagrar;
+}
+
+.cart_img {
+  display: inline-block;
+  height: $gutter;
+  margin: 0 -1em -0.25em 0;
 }

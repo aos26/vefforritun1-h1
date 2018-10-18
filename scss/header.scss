@@ -16,7 +16,7 @@
   flex-direction: column;
   align-items: center;
 
-  /* MQ 
+  /* MQ
   flex-direction: row;
   align-items: flex-end;
   */
@@ -24,7 +24,8 @@
 
 .header__title {
   size: 50px;
-  text-align: center;
+  font-family: $fyrirsogn;
+
 }
 
 .header__menu__list {

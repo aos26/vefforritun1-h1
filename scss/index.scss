@@ -1,7 +1,84 @@
 @import "scss/config";
 
 .main {
-  width: 1240px;
+  width: 100%;
+  padding: $gutter 0;
+}
+
+.main__content {
+  display: flex;
+  max-width: 1240px;
   margin: 0 auto;
   flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.main__row {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: 700px) {
+    flex-direction: row;
+  }
+}
+
+/* laga bilið á milli með -0.5*$gutter 
+á hliðar á content
+ og einnig skoða myndir að ná alveg út í kantinn á minni skjáum
+ mögulega með sömu aðferð
+? */
+.main__col {
+  display: flex;
+  width: 100%;
+  padding: $gutter;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: 700px) {
+    width: 50%;
+  }
+}
+
+.col__img {
+  order: 1;
+
+  @media (min-width: 700px) {
+    order: 0;
+  }
+}
+
+.main__col__img {
+  width: 100%;
+}
+
+// ýti main__col niður með flex property yfir 1000px?
+.main__col__title {
+  margin-bottom: 2*$gutter;
+}
+
+.col__button {
+}
+
+.main__col__button {
+  display: inline-block;
+  width: 75%;
+  height: 100%;
+  padding: $gutter;
+  margin: 2*$gutter 0;
+  color: $svartur;
+  text-align: center;
+  text-decoration: none;
+  background-color: $bleikur;
+  border-radius: 5px;
+
+  @media (min-width: 1000px) {
+    width: 50%;
+  }
+}
+
+.main__col__button:hover {
+  color: $bleikur;
+  background-color: $svartur;
 }

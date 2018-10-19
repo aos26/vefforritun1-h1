@@ -7,13 +7,15 @@
 
 .footer__contents {
   display: flex;
-  margin: $gutter;
+  max-width: 1200px;
+  margin: 0 auto;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 .footer__col {
   width: 50%;
+  padding-left: $gutter;
 
   @media (min-width: 1000px) {
     width: 25%;

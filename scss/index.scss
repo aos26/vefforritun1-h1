@@ -1,13 +1,9 @@
 @import "scss/config";
 
-.main {
-  width: 100%;
-  padding: $gutter 0;
-}
-
 .main__content {
   display: flex;
   max-width: 1240px;
+  padding: $gutter 0;
   margin: 0 auto;
   flex-direction: column;
   flex-wrap: wrap;
@@ -16,6 +12,7 @@
 .main__row {
   display: flex;
   width: 100%;
+  padding: $gutter $gutter*0.5;
   flex-direction: column;
   flex-wrap: wrap;
 
@@ -24,21 +21,17 @@
   }
 }
 
-/* laga bilið á milli með -0.5*$gutter 
-á hliðar á content
- og einnig skoða myndir að ná alveg út í kantinn á minni skjáum
- mögulega með sömu aðferð
-? */
 .main__col {
   display: flex;
   width: 100%;
-  padding: $gutter;
+  padding: 0 $gutter*0.5;
   flex-direction: column;
   justify-content: center;
 
   @media (min-width: 700px) {
     width: 50%;
   }
+
 }
 
 .col__img {
@@ -56,9 +49,6 @@
 // ýti main__col niður með flex property yfir 1000px?
 .main__col__title {
   margin-bottom: 2*$gutter;
-}
-
-.col__button {
 }
 
 .main__col__button {

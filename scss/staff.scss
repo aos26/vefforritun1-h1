@@ -6,70 +6,47 @@
 
 .staff__grid {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: $gutter*2 auto;
 }
-
-.staff__grid div {
-  line-height: 350px;
-  text-align: center;
-}
-
 
 .staff__row {
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 800px) {
+  @media (min-width: $brotpunktur1) {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   @media (min-width: 1240px) {
-    margin-left: -$gutter*0.5;
-    margin-right: -$gutter*0.5;
+    margin: 0 -$gutter*0.5;
   }
 }
 
-.staff__grid img {
+.front__image {
   width: 100%;
-  height: 450px;
-  margin-top: $gutter;
-
-  @media (min-width: 1500px) {
-    height: 650px;
-  }
-}
-
-.staff__grid span {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: normal;
-  margin: $gutter;
 }
 
 .staff__col {
-  height: 450px;
-
-  padding-left: $gutter*0.5;
-  padding-right: $gutter*0.5;
-
+  padding: 0 $gutter*0.5;
   margin-bottom: $gutter;
-
+  transition: $kvikun;
   transform-style: preserve-3d;
-  transition: transform 0.3s ease-in-out;
 
-  @media (min-width: 800px) {
+  @media (min-width: $brotpunktur1) {
     width: 50%;
   }
-
-  @media (min-width: 1500px) {
-    height: 650px;
-  }
-
 }
 
 .staff__col:hover {
   transform: rotateY(180deg);
+}
+
+.back__text {
+  display: flex;
+  margin-top: 50%;
+  text-align: center;
+  flex-direction: column;
 }
 
 .face {

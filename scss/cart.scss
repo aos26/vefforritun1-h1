@@ -7,11 +7,11 @@
 
 .cart__row {
   display: flex;
-  flex-direction: column;
-  margin-left: -$gutter*0.5;
   margin-right: -$gutter*0.5;
+  margin-left: -$gutter*0.5;
+  flex-direction: column;
 
-  @media (min-width: 700px) {
+  @media (min-width: $brotpunktur1) {
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -22,25 +22,25 @@
 }
 
 .cart__col {
-  padding-left: $gutter;
   padding-right: $gutter;
+  padding-left: $gutter;
 
-  @media (min-width: 700px) {
+  @media (min-width: $brotpunktur1) {
     width: 65%;
     padding-left: 0;
   }
 }
 
 .cart__col__img {
-  padding-left: $gutter;
   padding-right: $gutter;
+  padding-left: $gutter;
 
-  @media (min-width: 700px) {
+  @media (min-width: $brotpunktur1) {
     width: 35%;
     padding-left: 0;
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: $brotpunktur2) {
     width: 34.7%;
   }
 }
@@ -50,12 +50,12 @@
   height: 450px;
   margin-top: $gutter;
 
-  @media (min-width: 700px) {
+  @media (min-width: $brotpunktur1) {
     height: 250px;
     padding-left: $gutter;
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: $brotpunktur2) {
     height: 400px;
   }
 }
@@ -64,7 +64,7 @@
   margin-top: $gutter;
   text-align: left;
 
-  @media (min-width: 700px) {
+  @media (min-width: $brotpunktur1) {
     padding-left: $gutter;
   }
 }
@@ -72,7 +72,7 @@
 .cart__product__ur {
   margin-top: $gutter;
 
-  @media (min-width: 700px) {
+  @media (min-width: $brotpunktur1) {
     margin-top: $gutter*3.9;
   }
 }
@@ -80,7 +80,7 @@
 .cart__product__heyrnatol {
   margin-top: $gutter;
 
-  @media (min-width: 700px) {}
+  @media (min-width: $brotpunktur1) {}
 }
 
 .cart__description p {
@@ -90,11 +90,11 @@
 .cart__cost {
   margin-top: $gutter;
 
-  @media (min-width: 700px) {
+  @media (min-width: $brotpunktur1) {
     margin-top: $gutter*4.5;
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: $brotpunktur2) {
     margin-top: $gutter*12;
   }
 }
@@ -110,23 +110,23 @@
 
 .cart__col__box select {
   width: $gutter*5;
-  border: 1px solid $svartur;
-  margin-right: $gutter*0.5;
   height: $gutter*1.5;
   padding-left: $gutter*0.5;
+  margin-right: $gutter*0.5;
+  border: 1px solid $svartur;
 }
 
 .cart__button {
-  margin-right: $gutter*0.5;
+  height: $gutter*1.5;
   padding: $gutter*0.5 $gutter*0.5 $gutter*0.5 $gutter*2.5;
+  margin-right: $gutter*0.5;
+  white-space: nowrap;
   background: $hvitur url('../img/cart.svg');
-  background-position: $gutter*0.5 2px;
   background-repeat: no-repeat;
-  transition: background-color 0.3s ease-in-out;
+  background-position: $gutter*0.5 2px;
   background-size: 25px;
   border-radius: 5px;
-  height: $gutter*1.5;
-  white-space: nowrap;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .cart__button:hover {
@@ -134,48 +134,46 @@
 }
 
 .cart__col__form__left {
-  padding-left: $gutter;
-  padding-right: $gutter;
-
   display: flex;
+  padding-right: $gutter;
+  padding-left: $gutter;
   flex-direction: column;
 
-  @media (min-width: 700px) {
+  @media (min-width: $brotpunktur1) {
     width: 50%;
     padding-right: $gutter*0.5;
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: $brotpunktur2) {
     width: 33.333%;
     margin-left: 16.4%;
   }
 
   @media (min-width: 1200px) {
+    padding-right: 0;
     padding-left: $gutter;
-    padding-right: 0px;
   }
 }
 
 .cart__col__form__right {
-  padding-left: $gutter;
-  padding-right: $gutter;
-
   display: flex;
+  padding-right: $gutter;
+  padding-left: $gutter;
   flex-direction: column;
 
-  @media (min-width: 700px) {
+  @media (min-width: $brotpunktur1) {
     width: 50%;
     padding-left: $gutter*0.5;
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: $brotpunktur2) {
     width: 33.333%;
     padding-right: $gutter*0.5;
   }
 
   @media (min-width: 1200px) {
-    padding-left: $gutter;
     padding-right: $gutter*0.17;
+    padding-left: $gutter;
   }
 }
 
@@ -189,10 +187,10 @@
 }
 
 .form__box {
-  width: 66.667777%;
   float: right;
+  width: 66.667777%;
   height: $gutter*1.5;
-  border: 1px solid black;
+  border: 1px solid $svartur;
 }
 
 .form__box__gildistimi {
@@ -210,24 +208,24 @@
 }
 
 .form__button {
-  margin-left: 25%;
+  display: inline-block;
   width: 50%;
+  padding: 0;
   margin-top: $gutter;
   margin-bottom: $gutter;
-  padding: 0;
-  display: inline-block;
+  margin-left: 25%;
   line-height: 50px;
   text-align: center;
   background-color: $bleikur;
-  transition: background-color 0.3s ease-in-out;
   border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
 
-  @media (min-width: 700px) {
+  @media (min-width: $brotpunktur1) {
     width: 33.333%;
     margin-left: 33.333%;
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: $brotpunktur2) {
     width: 20%;
     margin-left: 40%;
   }

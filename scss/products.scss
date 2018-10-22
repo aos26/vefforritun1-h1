@@ -1,0 +1,131 @@
+@import "scss/config";
+
+html {
+  font-size: 16px;
+}
+
+.product__grid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product__row {
+  display: flex;
+  flex-direction: column;
+  margin-left: -$gutter*0.5;
+  margin-right: -$gutter*0.5;
+
+  @media (min-width: 700px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.product__col {
+  padding: 0 $gutter;
+
+  @media (min-width: 700px) {
+    width: 50%;
+    padding-left: $gutter*0.5;
+    padding-right: $gutter*0.5;
+  }
+
+  @media (min-width: 1250px) {
+    width: 33.33%;
+    padding-left: $gutter*0.5;
+    padding-right: $gutter*0.5
+  }
+}
+
+.product__col__left {
+  @media (min-width: 700px) and (max-width: 1249px) {
+    padding-right: 0;
+    padding-left: $gutter*0.5;
+  }
+}
+
+.product__col__right {
+  @media (min-width: 700px) and (max-width: 1249px) {
+    padding-right: $gutter*0.5;
+    padding-left: 0;
+  }
+}
+
+
+img {
+  max-height: 450px;
+  width: 100%;
+  margin-top: $gutter*0.5;
+}
+
+.product__grid h1 {
+  margin-top: $gutter;
+}
+
+.product__grid h2 {
+  margin-top: $gutter;
+}
+
+.card__text {
+  margin-top: $gutter*0.5;
+}
+
+.product__label {
+  margin-top: $gutter*0.5;
+}
+
+.product__takki {
+  display: flex;
+}
+
+.product__col__box {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: $gutter*2;
+}
+
+.product__takki {
+  padding: $gutter*0.5 $gutter*0.5 $gutter*0.5 $gutter*2.5;
+  background: $hvitur url('../img/cart.svg');
+  background-position: $gutter*0.5 5px;
+  background-repeat: no-repeat;
+  transition: background-color 0.3s ease-in-out;
+  background-size: $gutter;
+  border-radius: 3px;
+  height: $gutter*1.5;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.product__box__fjoldi {
+  border-radius: 3px;
+  width: 58%;
+
+}
+
+.product__box__takki {
+  width: 40%;
+  margin-left: 2%;
+
+}
+
+.product__col__box select {
+  height: $gutter*1.5;
+  width: 100%;
+}
+
+.product__takki:hover {
+  background-color: $bleikur;
+}
+
+.card__myndavel h2 {
+  @media (min-width: 700px) {
+    margin-top: $gutter*2.8;
+  }
+}
+
+.card__skor h2 {
+  @media (min-width: 1250px) {
+    margin-top: $gutter*2.8;
+  }
+}

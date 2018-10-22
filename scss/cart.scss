@@ -1,4 +1,4 @@
-@import "/scss/config";
+@import "scss/config";
 
 .cart__grid {
   max-width: 1200px;
@@ -192,7 +192,7 @@
   width: 66.667777%;
   float: right;
   height: $gutter*1.5;
-  border: 1px solid $svartur;
+  border: 1px solid black;
 }
 
 .form__box__gildistimi {

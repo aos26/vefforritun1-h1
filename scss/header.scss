@@ -32,11 +32,11 @@
   font-family: $fyrirsogn;
   font-size: 3em;
   text-align: center;
-
 }
 
 .header__menu__list {
   display: flex;
+  font-weight: bold;
   text-transform: uppercase;
   list-style-type: none;
   flex-direction: row;

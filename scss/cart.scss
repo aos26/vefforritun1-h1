@@ -62,6 +62,7 @@
 
 .cart__title {
   margin-top: $gutter;
+  font-family: $fyrirsogn;
   text-align: left;
 
   @media (min-width: $brotpunktur1) {
@@ -71,6 +72,7 @@
 
 .cart__product__ur {
   margin-top: $gutter;
+  font-family: $fyrirsogn;
 
   @media (min-width: $brotpunktur1) {
     margin-top: $gutter*3.9;
@@ -79,6 +81,7 @@
 
 .cart__product__heyrnatol {
   margin-top: $gutter;
+  font-family: $fyrirsogn;
 }
 
 .cart__description {
@@ -173,6 +176,7 @@
 
 .cart__form__title {
   margin-top: $gutter;
+  font-family: $fyrirsogn;
   text-align: left;
 }
 

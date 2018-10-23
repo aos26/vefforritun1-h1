@@ -14,7 +14,7 @@
     flex-wrap: wrap;
   }
 
-  @media (min-width: 1240px) {
+  @media (min-width: $brotpunktur3) {
     margin: 0 -$gutter*0.5;
   }
 }

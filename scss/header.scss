@@ -20,7 +20,7 @@
   align-items: center;
 }
 
-@media (min-width: 700px) {
+@media (min-width: $brotpunktur1) {
   .header__menu__cart {
     margin-top: -40px;
     margin-left: calc(100% - 110px);
@@ -41,9 +41,6 @@
   list-style-type: none;
   flex-direction: row;
   flex-wrap: wrap;
-
-  @media (min-width: 700px) {
-  }
 }
 
 .header__menu * {
@@ -54,7 +51,7 @@
   margin: $gutter;
   color: $svartur;
   text-decoration: none;
-  transition: 300ms ease-in-out;
+  transition: $kvikun;
 }
 
 .header__menu__item:hover {

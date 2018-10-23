@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
   <header class="header">
     <div class="header__contents">
       <h1 class="header__title">Karfa</h1>
@@ -29,18 +28,19 @@
         </ul>
         <div class="header__menu__cart">
           <img class="cart_img" src="/img/cart.svg" alt="">
-          <a class="header__menu__item hmi__cart" href="/pages/cart.html">
+          <a class="header__menu__item" href="/pages/cart.html">
             <u>Karfa (3)</u>
           </a>
         </div>
       </div>
     </div>
   </header>
+  
   <div class="cart__grid">
     <div class="cart__row">
       <div class="cart__col__img">
         <div class="cart__title">
-          <h1>Vörur í körfu</h1>
+          <h2>Vörur í körfu</h2>
         </div>
         <div class="cart__img">
           <img src="/img/watch.jpg" alt="Ótrúlegt úr">
@@ -48,20 +48,20 @@
       </div>
       <div class="cart__col">
         <div class="cart__product__ur">
-          <h1>Ótrúlegt úr</h1>
+          <h2>Ótrúlegt úr</h2>
         </div>
-        <div class="cart__description">
-          <p>Hvað er klukkan? Þetta úr mun svara því hvenær sem er.</p>
+        <div>
+          <p class="cart__description">Hvað er klukkan? Þetta úr mun svara því hvenær sem er.</p>
         </div>
         <div class="cart__cost">
-          <h2>99.900 kr.-</h2>
+          <h3>99.900 kr.-</h3>
         </div>
         <div>
           <label for="cart__box">Fjöldi:</label>
         </div>
         <div class="cart__col__box">
           <div>
-            <select id="cart__box">
+            <select class="cart__box">
               <option value="">1</option>
               <option value="">2</option>
               <option value="">3</option>
@@ -84,21 +84,21 @@
       </div>
       <div class="cart__col">
         <div class="cart__product__heyrnatol">
-          <h1>Hágæða heyrnatól</h1>
+          <h2>Hágæða heyrnatól</h2>
         </div>
-        <div class="cart__description">
-          <p>Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnartólum. Höfum við minnst á að þau eru
+        <div>
+          <p class="cart__description">Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnartólum. Höfum við minnst á að þau eru
             hágæða?</p>
         </div>
         <div class="cart__cost">
-          <h2>39.999 kr.-</h2>
+          <h3>39.999 kr.-</h3>
         </div>
         <div>
           <label for="cart__box">Fjöldi:</label>
         </div>
         <div class="cart__col__box">
           <div>
-            <select>
+            <select class="cart__box">
               <option value="">2</option>
               <option value="">1</option>
               <option value="">3</option>
@@ -118,7 +118,7 @@
     <div class="cart__row">
       <form class="cart__col__form__left" method="POST">
         <div class="cart__form__title">
-          <h1>Sendingarupplýsingar</h1>
+          <h2>Sendingarupplýsingar</h2>
         </div>
         <div class="form__label">
           <label for="nafn">Nafn:
@@ -321,7 +321,7 @@
       </form>
       <form class="cart__col__form__right" method="POST">
         <div class="cart__form__title">
-          <h1>Greiðsluupplýsingar</h1>
+          <h2>Greiðsluupplýsingar</h2>
         </div>
         <div class="form__label">
           <label for="nafn">Kortanúmer:

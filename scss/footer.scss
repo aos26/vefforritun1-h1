@@ -8,7 +8,7 @@
 
 .footer__contents {
   display: flex;
-  max-width: 1240px;
+  max-width: $brotpunktur3;
   margin: 0 auto;
   flex-direction: row;
   flex-wrap: wrap;
@@ -18,7 +18,7 @@
   width: 50%;
   padding-left: $gutter;
 
-  @media (min-width: 1000px) {
+  @media (min-width: $brotpunktur2) {
     width: 25%;
   }
 }
@@ -38,7 +38,7 @@
 .footer__col__item {
   color: $gulgrar;
   text-decoration: none;
-  transition: 300ms ease-in-out;
+  transition: $kvikun;
 }
 
 .footer__col__item:hover {

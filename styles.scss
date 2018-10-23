@@ -11,14 +11,12 @@
   box-sizing: inherit;
 }
 
-html {
-  /* stylelint-disable-line */
+html {/* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
 
   // TODO fleiri grunn stillingar
   font: $leturstaerd $meginmal;
-  padding: 0 $gutter*0.5;
 }
 
 // TODO sækja allar sass skrár

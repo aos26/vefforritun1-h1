@@ -1,9 +1,5 @@
 @import "scss/config";
 
-html {
-  font-size: 16px;
-}
-
 .product__grid {
   max-width: 1200px;
   margin: 0 auto;
@@ -11,11 +7,11 @@ html {
 
 .product__row {
   display: flex;
-  flex-direction: column;
-  margin-left: -$gutter*0.5;
   margin-right: -$gutter*0.5;
+  margin-left: -$gutter*0.5;
+  flex-direction: column;
 
-  @media (min-width: 700px) {
+  @media (min-width: $brotpunktur1) {
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -24,45 +20,44 @@ html {
 .product__col {
   padding: 0 $gutter;
 
-  @media (min-width: 700px) {
+  @media (min-width: $brotpunktur1) {
     width: 50%;
-    padding-left: $gutter*0.5;
     padding-right: $gutter*0.5;
+    padding-left: $gutter*0.5;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $brotpunktur2) {
     width: 33.33%;
+    padding-right: $gutter*0.5;
     padding-left: $gutter*0.5;
-    padding-right: $gutter*0.5
   }
 }
 
 .product__col__left {
-  @media (min-width: 700px) and (max-width: 1249px) {
+  @media (min-width: $brotpunktur1) and (max-width: $brotpunktur3) {
     padding-right: 0;
     padding-left: $gutter*0.5;
   }
 }
 
 .product__col__right {
-  @media (min-width: 700px) and (max-width: 1249px) {
+  @media (min-width: $brotpunktur1) and (max-width: $brotpunktur3) {
     padding-right: $gutter*0.5;
     padding-left: 0;
   }
 }
 
-
-img {
-  max-height: 450px;
+.product__img {
   width: 100%;
+  max-height: 450px;
   margin-top: $gutter*0.5;
 }
 
-.product__grid h1 {
+.product__h2 {
   margin-top: $gutter;
 }
 
-.product__grid h2 {
+.product__price {
   margin-top: $gutter;
 }
 
@@ -74,32 +69,29 @@ img {
   margin-top: $gutter*0.5;
 }
 
-.product__takki {
-  display: flex;
-}
-
 .product__col__box {
   display: flex;
-  flex-direction: row;
   margin-bottom: $gutter*2;
+  flex-direction: row;
 }
 
 .product__takki {
+  display: flex;
+  width: 100%;
+  height: $gutter*1.5;
   padding: $gutter*0.5 $gutter*0.5 $gutter*0.5 $gutter*2.5;
+  white-space: nowrap;
   background: $hvitur url('../img/cart.svg');
-  background-position: $gutter*0.5 5px;
   background-repeat: no-repeat;
-  transition: background-color 0.3s ease-in-out;
+  background-position: $gutter*0.5 5px;
   background-size: $gutter;
   border-radius: 3px;
-  height: $gutter*1.5;
-  white-space: nowrap;
-  width: 100%;
+  transition: background-color $kvikun;
 }
 
 .product__box__fjoldi {
-  border-radius: 3px;
   width: 58%;
+  border-radius: 3px;
 
 }
 
@@ -109,23 +101,11 @@ img {
 
 }
 
-.product__col__box select {
-  height: $gutter*1.5;
+.product__fjoldi {
   width: 100%;
+  height: $gutter*1.5;
 }
 
 .product__takki:hover {
   background-color: $bleikur;
-}
-
-.card__myndavel h2 {
-  @media (min-width: 700px) {
-    margin-top: $gutter*2.8;
-  }
-}
-
-.card__skor h2 {
-  @media (min-width: 1250px) {
-    margin-top: $gutter*2.8;
-  }
 }

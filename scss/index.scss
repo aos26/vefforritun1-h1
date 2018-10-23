@@ -2,7 +2,7 @@
 
 .main__content {
   display: flex;
-  max-width: 1240px;
+  max-width: $brotpunktur3;
   padding: $gutter 0;
   margin: 0 auto;
   flex-direction: column;
@@ -16,7 +16,7 @@
   flex-direction: column;
   flex-wrap: wrap;
 
-  @media (min-width: 700px) {
+  @media (min-width: $brotpunktur1) {
     flex-direction: row;
   }
 }
@@ -28,7 +28,7 @@
   flex-direction: column;
   justify-content: center;
 
-  @media (min-width: 700px) {
+  @media (min-width: $brotpunktur1) {
     width: 50%;
   }
 
@@ -37,7 +37,7 @@
 .col__img {
   order: 1;
 
-  @media (min-width: 700px) {
+  @media (min-width: $brotpunktur1) {
     order: 0;
   }
 }
@@ -46,7 +46,6 @@
   width: 100%;
 }
 
-// ýti main__col niður með flex property yfir 1000px?
 .main__col__title {
   margin-bottom: 2*$gutter;
 }
@@ -71,4 +70,5 @@
 .main__col__button:hover {
   color: $bleikur;
   background-color: $svartur;
+  transition: $kvikun;
 }

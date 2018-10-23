@@ -1,9 +1,5 @@
 @import "scss/config";
 
-//TODO 
-//Það er eins og það sé einhvað buggað, 
-//höktar þegar spjaldið snýst?
-
 .staff__grid {
   max-width: 1200px;
   margin: $gutter*2 auto;
@@ -24,7 +20,8 @@
 }
 
 .front__image {
-  width: 100%;
+  max-width: 100%;
+  max-height: fit-content;
 }
 
 .staff__col {
@@ -44,7 +41,6 @@
 
 .back__text {
   display: flex;
-  margin-top: 50%;
   text-align: center;
   flex-direction: column;
 }
@@ -56,7 +52,7 @@
 
 .face.back {
   position: absolute;
-  top: 0;
+  top: 40%;
   left: 0;
   transform: rotateY(180deg);
 }

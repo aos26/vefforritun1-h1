@@ -6,7 +6,7 @@
   "scripts": {
     "browser-sync": "browser-sync start --server --files index.html styles.css",
     "sass": "node-sass --source-map-embed styles.scss styles.css",
-    "sass-watch": "node-sass --source-map-embed --watch *.scss --recursive styles.css",
+    "sass-watch": "node-sass --source-map-embed --watch --recursive styles.scss styles.css",
     "dev": "npm-run-all --parallel sass sass-watch browser-sync",
     "lint-css": "stylelint styles.css --syntax css",
     "lint-scss": "stylelint styles.scss --syntax scss"
@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/eokristjans/hopv1-veff1#readme",
   "dependencies": {
+    "ajv": "^6.0.0",
     "node-sass": "^4.9.4"
   }
 }

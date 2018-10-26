@@ -8,19 +8,20 @@ Keyra skal verkefnið með því að opna staðsetningu skjals í skel (Command 
 
 Mappan hopv1-veff1 inniheldur allar nauðsynlegar skrár. Hún inniheldur: 
 
-* img: Mappan _img_ inniheldur allar þær myndir sem eru notaðar í verkefninu.
-* pages: Mappan _pages_ inniheldur html skjöl fyrir allar síður vefsíðunnar fyrir utan forsíðu. Þ.e. html kóðinn fyrir síðurnar cart, products og staff. 
-* scss: Mappan _scss_ inniheldur scss skrár fyrir hverja og eina síðu sem búin var til fyrir verkefnið. Þ.e. hún inniheldur scss skrárnar: 
-    * cart: Útlitskóði fyrir körfu
-    * config: Heldur utan um global breytur. Þ.e. allar þær breytur sem koma oft fyrir og nýtast á milli skjala, t.d. litir og grunnstærðir. 
-    * footer: Útlitskóðinn fyrir fót en hann er eins fyrir allar síður
-    * header: Útlitskóði fyrir haus
-    * index: Útlitskóði fyrir forsíðuna á vefsíðunni
-    * products: Útlitskóði fyrir vörusíðuna
-    * staff: Útlitskóði fyrir starfsmannasíðu
-* index: Skráin inniheldur html kóðann fyrir forsíðu vefsíðunnar.
-* styles: (css og scss) aðalskjalið fyrir útlit vefsíðu. _styles.scss_ importar öllum scss skjölum úr möppunni _scss_.
-* package.json: Skráin inniheldur stillingar fyrir node.js
+* _img_: Mappan _img_ inniheldur allar þær myndir sem eru notaðar í verkefninu.
+* _pages_: Mappan _pages_ inniheldur html skjöl fyrir allar síður vefsíðunnar fyrir utan forsíðu. Þ.e. html kóðinn fyrir síðurnar cart, products og staff. 
+* _scss_: Mappan _scss_ inniheldur scss skrár fyrir hverja og eina síðu sem búin var til fyrir verkefnið. Þ.e. hún inniheldur scss skrárnar: 
+    * `cart.scss`: Útlitskóði fyrir körfu
+    * `config.scss`: Heldur utan um global breytur. Þ.e. allar þær breytur sem koma oft fyrir og nýtast á milli skjala, t.d. litir og grunnstærðir. 
+    * `footer.scss`: Útlitskóðinn fyrir fót en hann er eins fyrir allar síður
+    * `header.scss`: Útlitskóði fyrir haus
+    * `index.scss`: Útlitskóði fyrir forsíðuna á vefsíðunni
+    * `products.scss`: Útlitskóði fyrir vörusíðuna
+    * `staff.scss`: Útlitskóði fyrir starfsmannasíðu
+* `index.html`: Skráin inniheldur html kóðann fyrir forsíðu vefsíðunnar.
+* `styles.scss`: Aðal skjalið fyrir útlit vefsíðu. `styles.scss` _importar_ öllum scss skjölum úr möppunni _scss_.
+* `styles.css`: Þýðing node.js á `styles.scss`.
+* `package.json`: Skráin inniheldur stillingar fyrir node.js.
 
 
 ## Hópurinn

@@ -2,11 +2,14 @@
 
 .header {
   width: 100%;
+  padding-bottom: 0.5*$gutter;
   background-color: $graenn;
 }
 
 .header__contents {
   display: flex;
+  max-width: 1240px;
+  margin: 0 auto;
   flex-direction: column;
 }
 
@@ -15,11 +18,13 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+}
 
-  /* MQ
-  flex-direction: row;
-  align-items: flex-end;
-  */
+@media (min-width: $brotpunktur1) {
+  .header__menu__cart {
+    margin-top: -40px;
+    margin-left: calc(100% - 110px);
+  }
 }
 
 .header__title {
@@ -27,11 +32,11 @@
   font-family: $fyrirsogn;
   font-size: 3em;
   text-align: center;
-
 }
 
 .header__menu__list {
   display: flex;
+  font-weight: bold;
   text-transform: uppercase;
   list-style-type: none;
   flex-direction: row;
@@ -46,7 +51,7 @@
   margin: $gutter;
   color: $svartur;
   text-decoration: none;
-  transition: 300ms ease-in-out;
+  transition: $kvikun;
 }
 
 .header__menu__item:hover {

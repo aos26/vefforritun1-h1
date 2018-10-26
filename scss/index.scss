@@ -1,0 +1,78 @@
+@import "scss/config";
+
+.main__content {
+  display: flex;
+  max-width: $brotpunktur3;
+  padding: $gutter 0;
+  margin: 0 auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.main__row {
+  display: flex;
+  width: 100%;
+  padding: $gutter $gutter*0.5;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $brotpunktur1) {
+    flex-direction: row;
+  }
+}
+
+.main__col {
+  display: flex;
+  width: 100%;
+  padding: 0 $gutter*0.5;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: $brotpunktur1) {
+    width: 50%;
+  }
+
+}
+
+.col__img {
+  order: 1;
+
+  @media (min-width: $brotpunktur1) {
+    order: 0;
+  }
+}
+
+.main__col__img {
+  width: 100%;
+}
+
+.main__col__title {
+  margin-bottom: 2*$gutter;
+}
+
+.main__col__button {
+  display: inline-block;
+  width: 75%;
+  height: 100%;
+  padding: $gutter;
+  margin: 2*$gutter 0;
+  color: $svartur;
+  text-align: center;
+  text-decoration: none;
+  background-color: $bleikur;
+  border-radius: 5px;
+
+  @media (min-width: 1000px) {
+    width: 50%;
+  }
+}
+
+.main__col__button:hover {
+  color: $bleikur;
+  background-color: $svartur;
+  transition: $kvikun;
+}
+
+.main__col__text {
+  font-size: 1.5em;
+}

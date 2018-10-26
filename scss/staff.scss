@@ -1,0 +1,62 @@
+@import "scss/config";
+
+.staff__grid {
+  max-width: 1200px;
+  margin: $gutter*2 auto;
+}
+
+.staff__row {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $brotpunktur1) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $brotpunktur3) {
+    margin: 0 -$gutter*0.5;
+  }
+}
+
+.front__image {
+  max-width: 100%;
+  max-height: fit-content;
+}
+
+.staff__col {
+  padding: 0 $gutter*0.5;
+  margin-bottom: $gutter;
+  transition: $kvikun;
+  transform-style: preserve-3d;
+
+  @media (min-width: $brotpunktur1) {
+    width: 50%;
+  }
+}
+
+.staff__col:hover {
+  transform: rotateY(180deg);
+}
+
+.back__text {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.face {
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.face.back {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  transform: rotateY(180deg);
+}
+
+.back__title {
+  font-family: $fyrirsogn;
+}

@@ -36,8 +36,8 @@ Framkvæma eftirfarandi í möppunni þar sem verkefnið er geymt:
         git branch -d sunnudagurErling      (eyðir)
     Og fara aftur í 1. hérna að ofan
 
-
-
+    Til að eyða öllu sem þú ert ekki búinn að commita
+        git reset --hard HEAD
 
 Í þessu myndbandi eru einhverjar upplýsingar um þetta og hvernig á að takast á við merge conflict
 https://www.youtube.com/watch?v=EuQ0sB0n6ZM&feature=youtu.be Fyrirlestur 5.3: Git #2

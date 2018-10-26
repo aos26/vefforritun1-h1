@@ -1,5 +1,43 @@
-
 # Hópverkefni 1
+
+## Keyrsla
+
+Keyra skal verkefnið með því að opna staðsetningu skjals í skel (Command Prompt, Bash, eða sambærilegu forriti) og keyra skipunina `npm install`. Þá skal nota skipunina `npm run dev` eða `npm run browser-sync` til að keyra síðuna í vafra.
+
+## Uppsetning
+
+Mappan hopv1-veff1 inniheldur allar nauðsynlegar skrár. Hún inniheldur: 
+
+* img: Mappan _img_ inniheldur allar þær myndir sem eru notaðar í verkefninu.
+* pages: Mappan _pages_ inniheldur html skjöl fyrir allar síður vefsíðunnar fyrir utan forsíðu. Þ.e. html kóðinn fyrir síðurnar cart, products og staff. 
+* scss: Mappan _scss_ inniheldur scss skrár fyrir hverja og eina síðu sem búin var til fyrir verkefnið. Þ.e. hún inniheldur scss skrárnar: 
+    * cart: Útlitskóði fyrir körfu
+    * config: Heldur utan um global breytur. Þ.e. allar þær breytur sem koma oft fyrir og nýtast á milli skjala, t.d. litir og grunnstærðir. 
+    * footer: Útlitskóðinn fyrir fót en hann er eins fyrir allar síður
+    * header: Útlitskóði fyrir haus
+    * index: Útlitskóði fyrir forsíðuna á vefsíðunni
+    * products: Útlitskóði fyrir vörusíðuna
+    * staff: Útlitskóði fyrir starfsmannasíðu
+* index: Skráin inniheldur html kóðann fyrir forsíðu vefsíðunnar.
+* styles: (css og scss) aðalskjalið fyrir útlit vefsíðu. _styles.scss_ importar öllum scss skjölum úr möppunni _scss_.
+* package.json: Skráin inniheldur stillingar fyrir node.js
+
+
+## Hópurinn
+
+Alexander Þór Hafþórsson    -   atth15@hi.is
+
+Andrea Ósk Sigurðardóttir   -   aos26@hi.is
+
+Erling Óskar Kristjánsson   -   eok4@hi.is
+
+
+
+
+
+
+
+# Hópverkefni 1 - Gefin lýsing
 
 Verkefnið felst í því að smíða vef eftir forskrift.
 

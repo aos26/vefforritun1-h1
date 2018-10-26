@@ -25,7 +25,9 @@ Mappan hopv1-veff1 inniheldur allar nauðsynlegar skrár. Hún inniheldur:
 ## Hópurinn
 
 Alexander Þór Hafþórsson    -   atth15@hi.is
+
 Andrea Ósk Sigurðardóttir   -   aos26@hi.is
+
 Erling Óskar Kristjánsson   -   eok4@hi.is
 
 

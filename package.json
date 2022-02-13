@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/eokristjans/hopv1-veff1#readme",
   "dependencies": {
-    "ajv": "^6.0.0",
+    "ajv": "^6.12.3",
     "node-sass": "^4.9.4"
   }
 }
